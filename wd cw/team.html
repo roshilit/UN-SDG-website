@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Page</title>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+
+h1{
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+h4{
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.team-container {
+  text-align: center;
+}
+body{
+  background-color: rgb(6, 21, 52);
+  font-family: sans-serif;
+}
+.team-member {
+    display: inline-block;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;   
+}
+.team-member img {
+    display: inline-block; 
+    height: 200px;
+    width: 200px;
+    transition: transform 0.3s, filter 0.3s;
+}
+.team-member:hover img {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+.container {
+  margin-bottom: 5px;
+  padding:  auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.701);
+  width: 100%;
+  display: none;  /*to keep the student details hidden until the user hover over the image.*/
+  font-size:14px;
+}
+.team-member:hover .container {
+  display: block;
+}
+
+/* Display the team members below each other instead of side by side on small screens*/
+@media screen and (max-width: 650px) {
+  .container {
+    width: 100%;
+    padding: 5px;
+    display: none;
+    position: relative;
+  }
+  .team-member img{
+    position:relative;
+  }
+  .team-member{
+    display: block;
+  }
+}
+
+</style>    
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="logo.png" alt="logo" class="logo" >
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="profile.html">USER PROFILE</a></li>
+            <li><a href="sitemap.html">SITEMAP</a></li>
+            <li><a href="team.html">TEAM</a></li>
+            <li><a href="feedback.html">FEEDBACK</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h1>Student Details</h1>
+<h4>About Us - Hover over the images for details!</h4>
+
+<div class="team-container">
+    <div class="team-member">
+        <img src="student1.jpg" alt="Team member 1">
+        <div class="container">
+          <h3>Chaniya Dahanayake</h3>
+          <p>Role: Student 1</p>
+          <p>Designed and implemented pages:</p>
+          <p>Splash Screen | Shop</p>
+        </div>
+    </div>
+    
+    <div class="team-member">
+        <img src="student2.jpg" alt="Team member 2">
+        <div class="container">
+          <h3>Dahamya Silva</h3>
+          <p>Role: Student 2</p>
+          <p>Designed and implemented pages:</p>
+          <p>Home Page | Feedback</p>
+        </div>
+    </div>
+
+    <div class="team-member">
+        <img src="student3.jpg" alt="Team member 3">
+        <div class="container">
+          <h3>Roshini De Silva</h3>
+          <p>Role: Student 3</p>
+          <p>Designed and implemented pages:</p>
+          <p>User Profile | Team</p>
+        </div>
+    </div>
+
+    <div class="team-member">
+        <img src="student4.jpg" alt="Team member 4">
+        <div class="container">
+          <h3>Nawanjana Yapa</h3>
+          <p>Role: Student 4</p>
+          <p>Designed and implemented pages:</p>
+          <p>Gallery | Sitemap</p>
+        </div>
+      </div>
+
+</div>
+
+<footer>
+        
+  <div class="col">
+      <h4>QUICK LINKS</h4>
+      <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="profile.html">User Profile</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+  </div>
+
+  <div class="col">
+      <h4>SHOP </h4>
+      <ul>
+          <li><a href="#">Items</a></li>
+          <li><a href="#">Payment</a></li>
+          <li><a href="#">Shipping</a></li>
+          
+      </ul>
+  </div>
+
+  <div class="col">
+      <h4>CONTACT US</h4>
+      <ul>
+          <li><a href="#">Phone: <br> 0112345678 / 0119874561</a></li>
+          <li><a href="#">Address:<br> GP square building, Galle Road, Bambalapitiya</a></li>
+          <li><a href="#">Email:<br> lifebelowwater@gmail.com</a></li>
+      </ul>
+  </div>
+
+  <div class="col">
+      <h4>FOLLOW US</h4>
+      <ul>
+          <li><a href="#">FACEBOOK</a></li>
+          <li><a href="#">INSTAGRAM</a></li>
+          <li><a href="#">YOUTUBE</a></li>
+      </ul>
+  </div>
+
+</div>
+
+<div class="page-editor">
+  <ul>
+      <li><a href="page_editor_1.html">Page Editor 1</a></li>
+      <li><a href="page_editor_2.html">Page Editor 2</a></li>
+      <li><a href="page_editor_3.html">Page Editor 3</a></li>
+      <li><a href="page_editor_4.html">Page Editor 4</a></li>
+  </ul>
+</div>
+
+</footer>
+
+</body>
+</html>
