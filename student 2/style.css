@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+
+
+.header{
+
+    background-color: black;
+    height: 115px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+
+.logo {
+    
+    width: 130px;
+    margin-left: 25px;
+    margin-right: 25px;
+    float: left;
+    margin-top: 6px;
+    padding-top: 3px;
+    margin-bottom: 5px;
+}
+
+nav ul {
+
+    list-style: none;
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+    
+}
+
+nav ul li{
+
+    list-style-type: none;
+    display: inline-block;
+    line-height: 80px;
+    margin-left:20px ;
+    margin-right: 20px;
+    font-size: 15px;
+
+}
+
+nav ul li a {
+
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0;
+
+}
+
+nav ul li :hover {
+
+    background-color:orange;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+footer{
+    background-color:rgb(26, 29, 34) ;
+    margin-top: 160px;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.col{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    width: 10%;
+    box-sizing: border-box;
+    text-align: left;
+    
+}
+
+.col h4{
+    margin-bottom: 30px;
+    color: orange;
+    padding-top: 20px;
+}
+
+.col ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.col ul li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.col ul li a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+footer .col ul li :hover{
+    color: red;
+}
+
+.page-editor li {
+    list-style-type: none;
+    display: inline-block;
+    line-height: 80px;
+    margin-left:20px ;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.page-editor li a {
+    color: #6cb7f8;
+    text-decoration: none;
+
+}
+
+
+
+
