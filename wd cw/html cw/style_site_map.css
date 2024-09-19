@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+*{
+	font-family: system-ui;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+    font-weight: bold;
+}
+
+
+body{
+	
+	
+	background-size : cover;
+	background-attachment: fixed;
+	background-position: 0px 80px;
+    background-image: url(image9.jpg);
+    
+}
+
+.header{
+
+    background-color: black;
+    height: 115px;
+    width: 100%;
+    position: fixed;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+.logo {
+    
+    width: 130px;
+    margin-left: 25px;
+    margin-right: 25px;
+    float: left;
+    margin-top: 6px;
+    padding-top: 3px;
+    margin-bottom: 5px;
+}
+
+nav ul {
+
+    list-style: none;
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+    
+}
+
+nav ul li{
+
+    list-style-type: none;
+    display: inline-block;
+    line-height: 80px;
+    margin-left:20px ;
+    margin-right: 20px;
+    font-size: 15px;
+
+}
+
+nav ul li a {
+
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0;
+
+}
+
+nav ul li :hover {
+
+    background-color:orange;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+
+.text {                               /*container box*/
+	
+	background-color: rgba(3, 76, 99, 0.8); 
+	color: white;
+	font-weight: 15;
+	border: 2px solid #141414;
+	position: absolute;
+	top: 200px;
+	left: 38px;
+	z-index: 2;
+	width: 95%;
+	padding: 20px; 
+    opacity:80%;
+	
+}
+
+
+.svg_logo{
+	fill: white;
+	stroke: none;
+}
+.svg_logo:hover{
+	fill : #6901DC;
+}
+
+.text svg {
+    width: 100%;
+    height: auto;
+}
+.node {
+    fill: transparent;
+	stroke:#001322;
+    stroke-width: 3px;
+}
+.arrow {
+    fill: none;
+    stroke: #001322;
+    stroke-width: 3px;
+	marker-end: url();
+}
+text{
+	fill:white;
+	font-size: 15px;
+}
+text :hover{
+	fill: #f3db54;
+}
+#text_box_text{
+	font-size: 50px;
+	text-align: center;
+    
+}
+
+footer{
+    background-color:rgb(26, 29, 34) ;
+    margin-top: 500px;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.col{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    width: 10%;
+    box-sizing: border-box;
+    text-align: left;
+    
+}
+
+.col h4{
+    margin-bottom: 30px;
+    color: orange;
+    padding-top: 20px;
+}
+
+.col ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.col ul li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.col ul li a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+footer .col ul li :hover{
+    color: red;
+}
+
+.page-editor li {
+    list-style-type: none;
+    display: inline-block;
+    line-height: 80px;
+    margin-left:20px ;
+    margin-right: 20px;
+    font-size: 10px;
+}
+
+.page-editor li a {
+    color: #6cb7f8;
+    text-decoration: none;
+
+}
+
+
+

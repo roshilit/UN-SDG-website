@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback</title>
+    <script defer src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+     <!-- Embedded CSS is used -->
+    <style>
+
+         body {
+
+        width: 100%;
+        height: 100vh;
+        background-image:url(feedbackBG.jpg);
+        background-position: center;
+        background-size: cover;
+        }
+        
+
+        form{
+            background-color:#e8f1f9 ;
+            display: flex;
+            flex-direction: column;
+            margin: 20px auto;
+            top: 50%;
+            left: 50%;
+            padding: 50px 50px;
+            width: 90%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 20px;
+
+        }
+
+        .feedback p {
+            text-align: left;
+        }
+
+        form h1{
+
+            text-align: center;
+        }
+
+        input{
+            margin-bottom: 15px;
+            margin-top: 5px;
+            width: 300px;
+            border-style: solid;
+            border-width: 2px;
+        }
+
+        .radio{
+            margin-right: 10px;
+
+        }
+
+        .radio-ten{
+            display: flex;
+        }
+
+        .radio-ten label {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height:20px;
+            margin-right: 8px;
+        }
+
+        hr{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        select {
+            width: 300px;
+        }
+
+        textarea{
+            width: 500px;
+            border-style: solid;
+            border-width: 2px;
+        }
+
+        .btn{
+            display: flex;
+            justify-content: center;
+            font-size: 15px;
+            width: 100px;
+            margin-left: auto;
+            
+        }
+
+        button{
+            border-style: solid;
+            border-width: 2px;
+            padding: 10px 20px;
+            font-size: 20px;
+            margin: 10px auto;
+            display: block;
+        }
+
+        h2{
+            text-align: center;
+            padding-top:20px;
+            margin-top: 10px;
+            font-size: 30px;
+        }
+
+        p{
+            text-align: center;
+            padding-top:20px;
+            font-size: 20px;
+        }
+
+        .button-container{
+            text-align: center;
+            visibility: hidden;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+     <!-- header is included in feedback page -->
+    <header class="header">
+
+        <div class="logo">
+            <img src="logo.png" alt="logo" class="logo" >
+        
+        </div>
+
+        <nav>
+            <ul>
+
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="profile.html">USER PROFILE</a></li>
+                <li><a href="sitemap.html">SITEMAP</a></li>
+                <li><a href="team.html">TEAM</a></li>
+                <li><a href="feedback.html">FEEDBACK</a></li>
+
+            </ul>
+        </nav>
+
+</header>
+
+
+<form id="form" action="#" method="post" enctype="text/plain" class="feedback" >
+
+    <h1>FEEDBACK FORM</h1>
+    <p style="text-align: center; font-weight: bold; color: red;">Please make sure to fill the fields marked as "Required"</p><br>
+
+     <!-- text input is used to get the name of the user-->
+    <div>        
+        <label for="usersname">Enter your name <b>(Required)</b>: </label>
+        <input type="text" name="usersname" id="usersname" placeholder="Enter name here" required>
+        <hr>
+    </div>
+
+
+     <!-- email input is used to get the email of the user -->
+    <div>
+        <label for="email" id="email-label">Enter your email <b>(Required)</b>: </label>
+        <input type="email" name="email" id="email" placeholder="Enter email here" required>
+        <hr>
+    </div>
+
+
+    <p>Were you able to find the information/product you were looking for?</p><br>
+
+     <!-- radio is used to get one answer from two answers -->
+    <div class="radio-group">
+        <input type="radio" name="visit" id="found" value="yes" >
+        <label for="yes" >Yes</label>
+    </div>
+
+    <div class="radio-group">
+        <input type="radio" name="visit" id="not-found" value="no" >
+        <label for="no" >No</label>
+    </div> <hr>
+
+
+    <p>Was this website user friendly?</p><br>
+
+
+     <!-- radio is used to get one answer from two answers -->
+    <div class="radio-group">
+        <input type="radio" name="nav" id="friendly" value="yes" >
+        <label for="yes">Yes</label>
+    </div>    
+
+    <div class="radio-group">
+        <input type="radio" name="nav" id="non-friendly" value="no" >
+        <label for="no">No</label>
+    </div>  <hr>
+
+     <!-- text area is used to get the suggestions -->
+    <label for="suggesions">Do you have any suggestions for the improvement of the website?</label><br>
+    <textarea name="suggesions" id="suggesions" cols="20" rows="5">
+    </textarea><br><hr>
+
+
+    <p>How satisfied are you with our website? (1 - not satisfied at all, 10 - extremely satisfied)</p><br>
+
+
+     <!-- radio is used to get the rating -->
+    <div class="radio-ten">
+
+        <input type="radio" name="satis" id="num1" value="1" >
+        <label for="num1">1</label>
+
+        <input type="radio" name="satis" id="num2" value="2" >
+        <label for="num2">2</label>
+
+        <input type="radio" name="satis" id="num3" value="3" >
+        <label for="num3">3</label>
+
+        <input type="radio" name="satis" id="num4" value="4" >
+        <label for="num4">4</label>
+
+        <input type="radio" name="satis" id="num5" value="5" >
+        <label for="num5">5</label>
+
+        <input type="radio" name="satis" id="num6" value="6" >
+        <label for="num6">6</label>
+
+        <input type="radio" name="satis" id="num7" value="7" >
+        <label for="num7">7</label>
+
+        <input type="radio" name="satis" id="num8" value="8" >
+        <label for="num8">8</label>
+
+        <input type="radio" name="satis" id="num9" value="9" >
+        <label for="num9">9</label>
+
+        <input type="radio" name="satis" id="num10" value="10" >
+        <label for="num10">10</label>
+    </div><br> <hr>
+
+
+    <p>Would you reccomend our service?</p><br>
+
+
+     <!-- radio is used to get one answer from two answers -->
+    <div class="radio-group">
+        <input type="radio" name="reccomend" id="yes" value="yes" >
+        <label for="yes">Yes</label>
+    </div>    
+
+    <div class="radio-group">
+        <input type="radio" name="reccomend" id="no" value="no" >
+        <label for="no">No</label>
+    </div><br><hr>
+
+
+    <p>Would you like to recieve updated about the website and any offers? </p><br>
+
+     <!-- radio is used to get one answer from two answers -->
+    <div class="radio-group">
+        <input type="radio" name="update" id="updates" value="yes" >
+        <label for="yes">Yes</label>
+    </div> 
+
+    <div class="radio-group">
+        <input type="radio" name="update" id="no-updates" value="no" >
+        <label for="no">No</label>
+    </div><br><hr>
+
+
+    <p>How would you like to get the update ?</p><br>
+
+     <!-- select dropdown is used to get the method user wants to get the updates -->
+    <select name="update" id="update">
+        <option value="none">None</option>
+        <option value="email">Via email</option>
+        <option value="call">Via phone call</option>
+        <option value="message">Via message</option>
+    </select><br><hr>
+
+     <!-- text are is used to get suggestions -->
+    <div>
+    <label for="comment">Please leave a comment <b>(Required)</b></label><br>
+    <textarea name="comment" id="comment" cols="20" rows="5" required>
+    </textarea><br>
+    </div>
+
+     <!-- submit button is used to do the submission -->
+    <input type="submit" value="submit" name="submit" class="btn" id="submit">
+
+     <!-- div tag with a class to do modifications to done and edit buttons that displays on the preview of the feedback -->
+    <div class="button-container">
+        <button onclick="editForm()">Edit</button>
+        <button onclick="printUpdatedForm()" id="done-button">Done</button>
+    </div>
+
+</form>
+
+ <!-- footer is included in feedback page -->
+<footer>
+        
+    <div class="col">
+        <h4>QUICK LINKS</h4>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="profile.html">User Profile</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </div>
+
+    <div class="col">
+        <h4>SHOP </h4>
+        <ul>
+            <li><a href="#">Items</a></li>
+            <li><a href="#">Payment</a></li>
+            <li><a href="#">Shipping</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="col">
+        <h4>CONTACT US</h4>
+        <ul>
+            <li><a href="#">Phone: <br> 0112345678 / 0119874561</a></li>
+            <li><a href="#">Address:<br> No.10, Galle Road, Bambalapitiya</a></li>
+            <li><a href="#">Email:<br> lifebelowwater@gmail.com</a></li>
+        </ul>
+    </div>
+
+    <div class="col">
+        <h4>FOLLOW US</h4>
+        <ul>
+            <li><a href="#">FACEBOOK</a></li>
+            <li><a href="#">INSTAGRAM</a></li>
+            <li><a href="#">YOUTUBE</a></li>
+        </ul>
+    </div>
+
+    <div class="page-editor">
+        
+        <ul>
+            <li><a href="page_editor_1.html">Page editor 1</a></li>
+            <li><a href="page_editor_2.html">Page editor 2</a></li>
+            <li><a href="page_editor_3.html">Page editor 3</a></li>
+            <li><a href="page_editor_4.html">Page editor 4</a></li>
+        </ul>
+    </div>
+
+
+</footer>
+    
+</body>
+</html>
